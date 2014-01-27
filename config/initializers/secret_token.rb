@@ -1,7 +1,12 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ZmDotCom::Application.config.secret_token = '3a1ab7490ce3fa9ede4e8219f61b9a56892a1e638ab0fd0743e44195e33a5f8ed7b80a32a9d0356c669423d61d4b039be9f7262e57cfdc5e4fdc93cc60cd633c'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+ZmDotCom::Application.config.secret_key_base = 'fb788f5838a467d989b4abcb728f2eca0397d2a6d214a16492329574962e6071f1fb9b6298cd61ed67fd80596601b21011f279062715a89e29d6d63341def86c'
