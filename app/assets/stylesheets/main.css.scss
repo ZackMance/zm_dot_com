@@ -18,9 +18,13 @@ body {
 header{
   border-top: 5px solid $background-offset;
   background: $background-offset url("../assets/bg-header.png") no-repeat center top;
-  background-size: cover;
-  min-height: 800px;
+  background-size: cover; 
 }
+
+@media screen and (max-width: 1200px){header{min-height: 765px;}}
+@media screen and (max-width: 768px){header{min-height: 1200px;}}
+@media screen and (max-width: 480px){header{min-height: 800px;}}
+@media screen and (min-width: 1200px){header{min-height: 1000px;}}
 
 ul{
   position: relative;
@@ -33,7 +37,6 @@ ul{
   margin: 0 auto;
   display: block;
 }
-
 .arrow{
   background: url("../assets/arrow.png") no-repeat center top;  
   background-size: 30px 28px;
