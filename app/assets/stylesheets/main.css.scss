@@ -1,12 +1,7 @@
 @import "compass/reset";
 @import "compass/css3";
-
-@include font-face("Flux Architect", font-files("assets/flux_Architect_Bold_0.ttf"));
-
-$primary-font: #121310;
-$dark-box: #121310;
-$background-offset: #95AA61;
-$panda-white: #F6F8EE;
+@import "utilities/variables";
+@import "utilities/mixins";
 
 body,
 html,#wrapper {
@@ -18,6 +13,13 @@ html,#wrapper {
 
 body {
 	@include background-image(linear-gradient(top left,  #899752 50%, #D6E68A 80% ));
+}
+
+header{
+  border-top: 5px solid $background-offset;
+  background: $background-offset url("../assets/bg-header.png") no-repeat center top;
+  background-size: cover;
+  min-height: 800px;
 }
 
 ul{
@@ -35,51 +37,6 @@ ul{
 .arrow{
   background: url("../assets/arrow.png") no-repeat center top;  
   background-size: 30px 28px;
-  display: none;
-}
-
-header{
-  border-top: 5px solid $background-offset;
-  background: $background-offset url("../assets/bg-header.png") no-repeat center top;
-  background-size: cover;
-  min-height: 800px;
-}
-
-nav{
-display: block;
-padding: 1em;
-height: 75px;
-z-index: 999;
-text-align: center;
-border-bottom: 1px solid rgba(18,19,16,0.3);
-  
-}
-
-nav a{
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $primary-font;
-}
-
-nav a:hover{
-  color: $panda-white;
-}
-
-nav a:hover + .arrow{
-  display:block;
-}
-
-nav li{
-float: left;
-margin-left: 15px;
-width: 150px;
-height: 75px;
-line-height: 72px;
-text-align: center;
-cursor: pointer;
-}
-
-.quote p{
-  color: $panda-white;
-  font-family: "Flux Architect"; 
+  display: block;
+  @include fade-out;
 }

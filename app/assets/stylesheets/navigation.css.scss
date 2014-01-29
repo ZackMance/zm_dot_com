@@ -1,0 +1,36 @@
+@import "main";
+
+nav{
+	
+	display: block;
+	padding: 1em;
+	height: 75px;
+	z-index: 999;
+	text-align: center;
+	border-bottom: 1px solid rgba(18,19,16,0.3);
+  
+  a{
+	  text-transform: uppercase;
+	  text-decoration: none;
+	  color: $primary-font;
+	}
+
+	a:hover{
+  	color: $panda-white;
+	}
+
+	a:hover + .arrow{
+	  display:block;
+		@include fade-in;  
+	}
+
+	li{
+		float: left;
+		margin-left: 15px;
+		width: 150px;
+		height: 75px;
+		line-height: 72px;
+		text-align: center;
+		cursor: pointer;
+	}
+}/*End Navigation*/
