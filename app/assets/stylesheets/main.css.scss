@@ -32,6 +32,12 @@ ul{
   display: block;
 }
 
+.arrow{
+  background: url("../assets/arrow.png") no-repeat center top;  
+  background-size: 30px 28px;
+  display: none;
+}
+
 header{
   border-top: 5px solid $background-offset;
   background: $background-offset url("../assets/bg-header.png") no-repeat center top;
@@ -55,9 +61,12 @@ nav a{
   color: $primary-font;
 }
 
-nav a:hover {
-  font-weight: 400;
-  color: white;
+nav a:hover{
+  color: $panda-white;
+}
+
+nav a:hover + .arrow{
+  display:block;
 }
 
 nav li{
