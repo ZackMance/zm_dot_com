@@ -3,38 +3,81 @@
 nav{
 	
 	display: block;
-	padding: 1em;
 	height: 75px;
-	z-index: 999;
 	text-align: center;
 	border-bottom: 1px solid rgba(18,19,16,0.3);
   
-  	a{
+	.wrap{
+	  display: block;
+	}
+
+	.arrow{
+	  background: url("../assets/arrow.png") no-repeat center top;  
+	  background-size: 30px 28px;
+	  display: block;
+	  @include fade-out;
+	}
+
+	a{
 	  text-transform: uppercase;
 	  text-decoration: none;
 	  color: $primary-font;
 	}
 
-	li{
-		float: left;
-		margin-left: 15px;
-		width: 150px;
-		height: 75px;
-		line-height: 72px;
-		text-align: center;
-		cursor: pointer;
+	ul{
+	  position: relative;
+	  display: inline-block;
+	  margin: 0 auto;
 
-		a{
-			display: block;
-		}
+	  li{
+			float: left;
+			margin-left: 15px;
+			width: 150px;
+			height: 75px;
+			line-height: 72px;
+			text-align: center;
+			cursor: pointer;
 
-		a:hover{
-		color: $panda-white;
-		}
+			a{
+				display: block;
+			}
 
-		a:hover + .arrow{
-		  display:block;
-			@include fade-in;  
-		}
-	} /*End li*/
+			a:hover{
+			color: $panda-white;
+			}
+
+			a:hover + .arrow{
+			  display:block;
+				@include fade-in;  
+			}
+		} /*End li*/
+	}/* End ul*/
 }/*End Navigation*/
+
+@media screen and (max-width: 1200px){
+	
+}
+
+@media screen and (max-width: 768px){
+	 nav{
+		ul{
+			li{
+				width: 100px;
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: 480px){
+  nav{
+		ul{
+			li{
+				width: 100px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px){
+	 
+}

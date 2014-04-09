@@ -21,25 +21,18 @@ header{
   background-size: cover; 
 }
 
-@media screen and (max-width: 1200px){header{min-height: 1100px;}}
-@media screen and (max-width: 768px){header{min-height: 1200px;}}
-@media screen and (max-width: 480px){header{min-height: 1100px;}}
-@media screen and (min-width: 1200px){header{min-height: 1150px;}}
-
-ul{
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
+@media screen and (max-width: 1200px){
+  header{min-height: 1100px;}
 }
 
-.wrap {
-  width: 960px;
-  margin: 0 auto;
-  display: block;
+@media screen and (max-width: 768px){
+  header{min-height: 1200px;}
 }
-.arrow{
-  background: url("../assets/arrow.png") no-repeat center top;  
-  background-size: 30px 28px;
-  display: block;
-  @include fade-out;
+
+@media screen and (max-width: 480px){
+  header{min-height: 1100px;}
+}
+
+@media screen and (min-width: 1200px){
+  header{min-height: 1150px;}
 }
