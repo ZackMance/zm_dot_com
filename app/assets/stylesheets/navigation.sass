@@ -16,7 +16,6 @@ nav
     display: block
     @include fade-out
   
-
   a
     text-transform: uppercase
     text-decoration: none
@@ -33,30 +32,33 @@ nav
       margin-left: 15px
       width: 150px
       height: 75px
-      line-height: 72px
       text-align: center
       cursor: pointer
+      padding-top: 1em
+      @media screen and (max-width: 1200px)
+      @media screen and (max-width: 768px)
+        width: 75px
+      @media screen and (max-width: 480px)
+        width: 45px
+      @media screen and (min-width: 1200px)
+
+      .text
+        @media screen and (max-width: 768px)
+          display: none
+        @media screen and (max-width: 480px)
+          display: none
+
 
       a
         display: block
+
+        i
+          width: 100%
       
       a:hover
         color: $panda-white
       
-
       a:hover + .arrow
         display:block
         @include fade-in
   
-@media screen and (max-width: 1200px)
-@media screen and (max-width: 768px)
-  nav
-    ul
-      li
-        width: 100px
-@media screen and (max-width: 480px)
-  nav
-    ul
-      li
-        width: 100px
-@media screen and (min-width: 1200px)

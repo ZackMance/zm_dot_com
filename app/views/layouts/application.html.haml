@@ -1,0 +1,15 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    
+    %title= "Zack Mance: Imagination Builder"
+    
+    %meta{content: "", name: "description"}
+    %meta{content: "width=device-width", name: "viewport"}
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+  %body
+    = yield
+  %footer
