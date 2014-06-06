@@ -1,43 +1,34 @@
 #wrapper
-  %header
-    %nav
-      .wrap
-        %ul
-          %li.menuitem
-            %a{href:"#"}
-              .text 
-                About 
-              %i.fa.fa-user
-          %li.menuitem
-            %a{href: "#"}
-              .text
-                Reverie
-              %i.fa.fa-rocket
-          %li.menuitems
-            %a{href: "#"} 
-              .text
-                Passion
-              %i.fa.fa-cutlery 
-          %li.menuitem
-            %a{href:  "#"} 
-              .text
-                Craft
-              %i.fa.fa-desktop
-          %li.menuitem
-            %a{href:  "#"}
-              .text 
-                Contact
-              %i.fa.fa-comments
+  %nav
+    .wrap
+      %ul
+        %li.menuitem
+          %a{href:"#"}
+            .text 
+              About 
+            %i.fa.fa-user
+            .arrow
+        %li.menuitem
+          %a{href: "#"}
+            .text
+              Reverie
+            %i.fa.fa-rocket
+        %li.menuitem
+          %a{href: "#"} 
+            .text
+              Passion
+            %i.fa.fa-cutlery 
+        %li.menuitem
+          %a{href:  "#"} 
+            .text
+              Craft
+            %i.fa.fa-desktop
+        %li.menuitem
+          %a{href:  "#"}
+            .text 
+              Contact
+            %i.fa.fa-comments
 
   .content
-    .container
-      .contentPanel
-        | "Stuff 1"
-      .contentPanel
-        | "Stuff 2"
-      .contentPanel
-        | "Stuff 3"
-      .contentPanel
-        | "Stuff 4"
-      .contentPanel
-        | "Stuff 5"
+    .contentPanel
+      = render 'about'

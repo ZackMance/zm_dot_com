@@ -9,13 +9,6 @@ nav
   .wrap
     display: block
   
-
-  .arrow
-    background: url("../assets/arrow.png") no-repeat center top
-    background-size: 30px 28px
-    display: block
-    @include fade-out
-  
   a
     text-transform: uppercase
     text-decoration: none
@@ -29,12 +22,13 @@ nav
 
     li
       float: left
-      margin-left: 15px
+      margin: 0px 7px
       width: 150px
       height: 75px
       text-align: center
       cursor: pointer
       padding-top: 1em
+      
       @media screen and (max-width: 1200px)
       @media screen and (max-width: 768px)
         width: 75px
@@ -51,14 +45,11 @@ nav
 
       a
         display: block
-
         i
           width: 100%
       
       a:hover
         color: $panda-white
-      
-      a:hover + .arrow
-        display:block
         @include fade-in
+      
   

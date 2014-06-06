@@ -7,20 +7,10 @@ body, html, #wrapper
   font: 16px/1.5 'Avenir Next', Helvetica Neue, sans-serif
   width: 100%
   height: 100%
+  border-top: 2px solid $background-offset
+  background: $background-offset url("../assets/bg-header.png") no-repeat center top
+  background-size: cover
   overflow: hidden
 
 body
-  @include background-image(linear-gradient(top left,  #899752 50%, #D6E68A 80% ))
-
-header
-  border-top: 5px solid $background-offset
-  background: $background-offset url("../assets/bg-header.png") no-repeat center top
-  background-size: cover
-  @media screen and (max-width: 1200px)
-    min-height: 1100px
-  @media screen and (max-width: 768px)
-    min-height: 1200px
-  @media screen and (max-width: 480px)
-    min-height: 1100px
-  @media screen and (min-width: 1200px)
-    min-height: 1150px
+  @include background-image( linear-gradient(top left,  $dark-green 50%, $light-green 80% ))
