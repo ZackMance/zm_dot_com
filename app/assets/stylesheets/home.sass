@@ -13,6 +13,27 @@
   .contentPanel
     font-size:  1em
     width:      20%
-    border:     1px solid black
     min-height: 100px
     float: left
+
+  .contact
+    .panel
+      margin-top: 20px
+      background: $panda-white
+
+      h2
+        font-family: 'Patrick Hand', cursive
+        font-size: 1.5em
+      label
+        color: $primary-font
+        font-size: .8em
+        font-weight: bold
+      
+      textarea
+        height: auto
+
+      input[type='Submit']
+        @include button
+
+      input[type='Text']
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif

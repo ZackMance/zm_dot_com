@@ -13,5 +13,29 @@
 @mixin green-gradient
   linear-gradient(top left,  $dark-green 50%, $light-green 80% )
 
-@mixin fade-background
-  transition: background-color 0.5s ease
+@mixin button
+  border: 0 none
+  border-radius: 2px 2px 2px 2px
+  color: #FFFFFF
+  cursor: pointer
+  display: inline-block
+  font-family: Arial,sans-serif
+  font-size: 12px
+  font-weight: bold
+  line-height: 20px
+  margin-bottom: 0
+  margin-top: 10px
+  padding: 7px 10px
+  text-transform: none
+  transition: all 0.3s ease 0s
+  -moz-transition: all 0.3s ease 0s
+  -webkit-transition: all 0.3s ease 0s
+  width: 16.795% /* auto */
+  text-align: center /* DELETE WHEN WIDTH AUTO */
+  &.green
+    background: none repeat scroll 0 0 $darker-green
+    color: $panda-white
+    &:hover
+      background: none repeat scroll 0 0 $light-green
+      color: $primary-font
+    

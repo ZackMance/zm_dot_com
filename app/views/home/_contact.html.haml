@@ -1,3 +1,34 @@
+
 .row
-  .large-12.columns
-    %img{:src=> "http://placehold.it/1600x800&text=CONTACT"}
+  .small-4.columns
+    .panel
+      %h2 Craft Collections
+      %hr
+      %img{:src => "http://placehold.it/300x150"}
+      %h2 Social Media
+      %hr
+      %img{:src => "http://placehold.it/300x150"}
+  .small-8.columns
+    .panel
+      %h2 Send me a message
+      %hr
+      %form{ :action => "", :method => "post"}
+        .row
+          .small-6.columns
+            %label{:for => "name"} Name:
+            %input{ :type => "text", :name => "name" }
+          .small-6.columns
+            %label{:for => "subject"} Topic:
+            %input{ :type => "text", :name => "subject" }
+        .row
+          .small-12.columns
+            %label{:for => "mail"} E-Mail:
+            %input{:type => "text", :name => "mail", :class => "text"}
+          .small-12.columns
+            %label{:for => "body"} Message:
+            %textarea{:name => "body", :rows => 5}
+        .row
+          .small-12.columns
+            %input{:type => "submit", :value => "Send", :class => "green right inline"}
+        
+  
