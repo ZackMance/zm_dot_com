@@ -7,7 +7,7 @@ $ ->
     panel = $('.contentPanel')[menuItemIndex]
     setColor = $(panel).data("bgcolor")
     
-    $(".content").stop().animate "backgroundColor": setColor , 2000 
+    $(".content").stop().animate "backgroundColor": setColor , 1500 
     $('.content').css('margin-left', -100 * menuItemIndex + '%')
 
   
