@@ -12,9 +12,9 @@
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
   %body
-    #wrapper
+    .wrapper
       = render 'layouts/navigation'  
       = yield
-      %footer
-        = render 'layouts/footer'
+    .footer
+      = render 'layouts/footer'
 
