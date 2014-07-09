@@ -1,0 +1,39 @@
+@import "main"
+
+.contact
+  .icon
+    width: 20px
+
+  .row 
+    background: $panda-white
+
+  .contentHeader
+    font-size: 1.5em
+    border: none
+    background: $panda-white
+    text-align: center
+
+
+  .panel
+    border: none
+    background: $panda-white
+
+    ul
+      padding-bottom: 20px
+
+    h2
+      font-size: 1em
+      text-transform: uppercase
+    label
+      color: $primary-font
+      font-size: .8em
+      font-weight: bold
+    
+    textarea
+      height: auto
+
+    input[type='Submit']
+      @include button
+
+    input[type='Text']
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
